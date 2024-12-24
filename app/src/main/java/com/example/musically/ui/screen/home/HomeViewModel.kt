@@ -39,7 +39,6 @@ class HomeViewModel(
     fun toggleFavorite(id: Long) {
         viewModelScope.launch {
             repository.updateFavoriteMusically(id)
-            // Memperbarui UI state setelah toggle favorite
             val currentState = _uiState.value
             if (currentState is UiState.Success) {
                 val updatedList = currentState.data.map { music ->
