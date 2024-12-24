@@ -1,8 +1,9 @@
 package com.example.musically.model
 
 data class FakeMusically (
-    val musicfy: Musically,
-    val count: Int
+    val musically: Musically,
+    val count: Int,
+    val isFavorite: Boolean = false
 )
 
 
