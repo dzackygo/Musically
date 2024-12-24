@@ -80,12 +80,10 @@ fun ProfileScreen(
                     .padding(top = 80.dp),
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
-                // Foto profil dengan border gradien yang lebih tipis
                 Box(
                     modifier = Modifier,
                     contentAlignment = Alignment.Center
                 ) {
-                    // Lingkaran putih di dalam border
                     Box(
                         modifier = Modifier,
                         contentAlignment = Alignment.Center
@@ -94,7 +92,7 @@ fun ProfileScreen(
                             painter = painterResource(R.drawable.img),
                             contentDescription = "Profile Image",
                             modifier = Modifier
-                                .size(140.dp) // Ukuran gambar
+                                .size(140.dp)
                                 .clip(CircleShape)
                         )
                     }
@@ -102,7 +100,6 @@ fun ProfileScreen(
 
                 Spacer(modifier = Modifier.height(24.dp))
 
-                // Kartu untuk detail informasi profil
                 Card(
                     modifier = Modifier
                         .fillMaxWidth()
